@@ -1,0 +1,30 @@
+name: 'Send Bluesky Post'
+description: 'Publish a Bluesky post using the ATP protocol.'
+branding:
+  icon: package
+  color: green
+inputs:
+  status:
+    description: 'The content of the post to send.'
+    required: true
+    default: 'Hello World!'
+  bluesky-email:
+    description: 'The email address of the account to authenticate.'
+    required: true
+    default: 'foo@bar.com'
+  bluesky-password:
+    description: 'The password of the account to authenticate.'
+    required: true
+    default: '1abc...'
+outputs:
+  cid:
+    description: 'The CID of the created post.'
+  uri:
+    description: 'The URI of the created post.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.status }}
+    - ${{ inputs.bluesky-email }}
+    - ${{ inputs.bluesky-password }}

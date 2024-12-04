@@ -1,0 +1,35 @@
+{
+  "name": "send-bluesky-post-action",
+  "version": "1.0.0",
+  "description": "GitHub action to submit a post to Bluesky using the ATP protocol.",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smapiot/send-bluesky-post-action.git"
+  },
+  "keywords": [
+    "bluesky",
+    "post",
+    "github",
+    "action",
+    "github-actions"
+  ],
+  "author": "smapiot",
+  "homepage": "https://piral.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smapiot/send-bluesky-post-action/issues"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/exec": "^1.1.1",
+    "@actions/github": "^6.0.0",
+    "@atproto/api": "^0.13.18",
+    "tlds": "^1.255.0"
+  }
+}
