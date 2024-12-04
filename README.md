@@ -1,6 +1,8 @@
-# Send Bluesky Post Action
+# Send Formatted Bluesky Post Action
 
-This GitHub action publishes a Bluesky Post using the ATP protocol.
+This GitHub action publishes an automatically formatted Bluesky Post using the ATP protocol.
+
+It is meant as a simple alternative that is reduced in options - automatically detecting links, tags, ... to form valid Bluesky posts.
 
 ## Inputs
 

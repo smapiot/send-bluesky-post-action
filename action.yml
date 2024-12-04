@@ -1,5 +1,5 @@
-name: 'Send Bluesky Post'
-description: 'Publish a Bluesky post using the ATP protocol.'
+name: 'Send Formatted Bluesky Post'
+description: 'Publish an automatically formatted Bluesky post using the ATP protocol.'
 branding:
   icon: package
   color: green
