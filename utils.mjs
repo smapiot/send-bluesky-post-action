@@ -1,4 +1,4 @@
-import TLDs from "tlds" assert { type: "json" };
+import TLDs from "tlds" with { type: "json" };
 
 function isValidDomain(str) {
   return !!TLDs.find((tld) => {

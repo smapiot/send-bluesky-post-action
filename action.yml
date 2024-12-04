@@ -16,6 +16,10 @@ inputs:
     description: 'The password of the account to authenticate.'
     required: true
     default: '1abc...'
+  authority:
+    description: 'The host name of the ATP target. By default "bsky.social" is used.'
+    required: false
+    default: 'bsky.social'
 outputs:
   cid:
     description: 'The CID of the created post.'
@@ -28,3 +32,4 @@ runs:
     - ${{ inputs.status }}
     - ${{ inputs.bluesky-email }}
     - ${{ inputs.bluesky-password }}
+    - ${{ inputs.authority }}

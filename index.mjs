@@ -10,9 +10,10 @@ async function runAction() {
   const text = getInput("status");
   const identifier = getInput("bluesky-email");
   const password = getInput("bluesky-password");
+  const authority = getInput("authority") || 'bsky.social';
 
   const agent = new AtpAgent({
-    service: "https://bsky.social",
+    service: `https://${authority}`,
   });
 
   await agent.login({

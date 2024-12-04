@@ -18,6 +18,10 @@ It is meant as a simple alternative that is reduced in options - automatically d
 
 **Required** The password of the account to authenticate.
 
+### `authority`
+
+*Optional* The host name of the ATP server to use. By default, `bsky.social` is used.
+
 ## Outputs
 
 ### `cid`
